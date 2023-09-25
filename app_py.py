@@ -68,7 +68,7 @@ if uploaded_file1 and uploaded_file2:
 
         with open(result_file, "rb") as f:
             result_data = f.read()
-        st.write(f"Download the result: [missing_numbers.xlsx](data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{base64.b64encode(result_data).decode()}")
+        st.write(f"Download the result: [missing_numbers.xlsx](data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{base64.b64encode(result_data).decode()})")
 
 # Add a message at the bottom
 st.write("Made with ❤️ by Yash Jain")
