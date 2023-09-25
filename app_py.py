@@ -4,7 +4,6 @@ import subprocess
 subprocess.check_call(['pip', 'install', 'openpyxl'])
 
 # Import openpyxl in your Streamlit app
-import openpyxl
 import streamlit as st
 
 # Your Streamlit app code here
