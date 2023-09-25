@@ -48,8 +48,7 @@ def main():
         st.write("Resultant Excel file:")
         st.dataframe(df2_not_in_df1)
 
-        # Provide a download link for the resultant Excel file
-        st.write(f"Download the result: [result.xlsx](data:application/octet-stream;base64,{base64.b64encode(open(result_file_name, 'rb').read()).decode()})")
+        
 
 if __name__ == "__main__":
     main()
