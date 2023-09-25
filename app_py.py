@@ -2,6 +2,19 @@ import streamlit as st
 import pandas as pd
 import base64
 
+import subprocess
+
+# Command to install 'openpyxl' using pip
+command = ["pip", "install", "openpyxl"]
+
+try:
+    # Run the command
+    subprocess.check_call(command)
+    print("openpyxl has been successfully installed.")
+except subprocess.CalledProcessError:
+    print("Error occurred while installing openpyxl.")
+
+
 def preprocess_phone_numbers(phone):
     phone_str = str(phone)  # Convert to string to ensure it's treated as text
     if len(phone_str) == 12:
